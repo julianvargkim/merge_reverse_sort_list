@@ -4,6 +4,14 @@
 
 
 def add_remove_list(original: list, add: list, remove: list):
+    """
+    Add, remove from original list then returns a sorted list in reverse (character count, alphabetic) order.
+    :param original: a list.
+    :param add: a list of elements to be added.
+    :param remove: a list to of elements be removed.
+    :return: a list.
+    """
+
     # Adds add list to original then remove elements from remove.
     # Set is implemented as hash table.
     data = (set(original) | set(add)) - set(remove)
@@ -38,6 +46,6 @@ def add_remove_list(original: list, add: list, remove: list):
 
 original = ['one', 'two', 'three']
 add = ['one', 'two', 'five', 'six']
-deleted = ['two', 'five']
+delete = ['two', 'five']
 
-print(add_remove_list(original, add, deleted))
+print(add_remove_list(original, add, delete))
