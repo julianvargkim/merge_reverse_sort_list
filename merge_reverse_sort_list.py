@@ -46,6 +46,6 @@ def add_remove_list(original: list, add: list, remove: list):
 
 original = ['one', 'two', 'three']
 add = ['one', 'two', 'five', 'six']
-delete = ['two', 'five']
+remove = ['two', 'five']
 
-print(add_remove_list(original, add, delete))
+print(add_remove_list(original, add, remove))
