@@ -5,6 +5,7 @@
 
 def add_remove_list(original: list, add: list, remove: list):
     # Adds add list to original then remove elements from remove.
+    # Set is implemented as hash table.
     data = (set(original) | set(add)) - set(remove)
 
     temp = dict()
